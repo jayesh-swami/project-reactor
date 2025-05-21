@@ -1,13 +1,18 @@
 package com.org.projectreactor;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.org.projectreactor.examples.FluxSchedulers;
+import com.org.projectreactor.examples.ParallelFlux;
 
-@SpringBootApplication
 public class ProjectReactorApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(ProjectReactorApplication.class, args);
+    public static void main(String[] args) throws InterruptedException {
+//        FluxCreateAndGenerate.fluxStreamCreateWithSink();
+//        FluxCreateAndGenerate.fluxStreamWithDifferentBackpressureStrategy();
+//        FluxCreateAndGenerate.fluxStreamGenerateWithSyncSink();
+//        FluxSchedulers.publishOnSubscribeOnSchedulerExample();
+//        FluxSchedulers.publishOnSchedulerExampleSameThread();
+        ParallelFlux.parallelObjectMapper();
     }
 
 }
+
