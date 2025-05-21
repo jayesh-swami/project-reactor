@@ -2,7 +2,6 @@ package com.org.projectreactor.examples;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.scheduler.Scheduler;
 import reactor.core.scheduler.Schedulers;
@@ -11,7 +10,6 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
 public class FluxStreamExample {
 
     private static final Logger logger = LoggerFactory.getLogger(FluxStreamExample.class);
@@ -81,7 +79,7 @@ public class FluxStreamExample {
         });
 
         while(true) {
-            Thread.sleep(5000);
+            Thread.sleep(10000);
             logger.info("Should be main");
         }
     }

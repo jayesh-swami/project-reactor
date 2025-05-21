@@ -3,6 +3,7 @@ package com.org.projectreactor;
 import com.org.projectreactor.examples.FluxStreamExample;
 import com.org.projectreactor.examples.FluxSchedulers;
 import com.org.projectreactor.examples.ParallelFlux;
+import com.org.projectreactor.examples.FluxStreamExamplesHot;
 
 public class ProjectReactorApplication {
 
@@ -14,10 +15,15 @@ public class ProjectReactorApplication {
 //        FluxSchedulers.publishOnSchedulerExampleSameThread();
 //        ParallelFlux.parallelObjectMapper();
 //        FluxStreamExample.testBasicFluxEmit();
-        FluxStreamExample.testBasicFluxEmitCustomScheduler();
+//        FluxStreamExample.testBasicFluxEmitCustomScheduler();
 //        FluxStreamExample.testBasicFluxEmitWithDelay();
 //        FluxStreamExample.testBasicFluxEmitFromArray();
 //        FluxStreamExample.testBasicFluxEmitFromList();
+
+//        FluxStreamExamplesHot.coldExample();
+//        FluxStreamExamplesHot.hotExample();
+//        FluxStreamExamplesHot.hotExampleDuplicate();
+        FluxStreamExamplesHot.hotExampleDuplicateWithCache();
     }
 
 }
